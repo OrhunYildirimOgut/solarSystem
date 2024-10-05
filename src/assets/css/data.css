@@ -1,0 +1,497 @@
+/* --------------------------------------------------------------------------- */
+/*                                Genel Ayarlar                                */
+/* --------------------------------------------------------------------------- */
+
+/* Genel Ortaçlar */
+.orbit, .planet, .pos {
+  /* Ortak orbit ve gezegen stilleri buraya eklenebilir */
+}
+
+/* --------------------------------------------------------------------------- */
+/*                            Animasyon Süreleri (Sideral Yıllar)              */
+/* --------------------------------------------------------------------------- */
+
+#mercury .pos,
+#mercury .planet,
+#mercury.orbit {
+  animation-duration: 2.8901604s;
+}
+
+#venus .pos,
+#venus .planet,
+#venus.orbit {
+  animation-duration: 7.38236712s;
+}
+
+#earth .pos,
+#earth .planet,
+#earth.orbit {
+  animation-duration: 12.0002088s;
+}
+
+#earth .orbit,
+#earth .orbit .pos {
+  /* Ay için animasyon süresi */
+  animation-duration: 0.897642708s;
+}
+
+#mars .pos,
+#mars .planet,
+#mars.orbit {
+  animation-duration: 22.5701712s;
+}
+
+#jupiter .pos,
+#jupiter .planet,
+#jupiter.orbit {
+  animation-duration: 142.35138s;
+}
+
+#saturn .pos,
+#saturn .planet,
+#saturn.orbit,
+#saturn .ring {
+  animation-duration: 353.369976s;
+}
+
+#uranus .pos,
+#uranus .planet,
+#uranus.orbit {
+  animation-duration: 1008.202152s;
+}
+
+#neptune .pos,
+#neptune .planet,
+#neptune.orbit {
+  animation-duration: 1977.49584s;
+}
+
+/* --------------------------------------------------------------------------- */
+/*                              Gezegen Boyutları                              */
+/* --------------------------------------------------------------------------- */
+
+/* Stretched Boyutları */
+.scale-stretched #sun {
+  
+}
+
+.scale-stretched #mercury .planet {
+  font-size: 1.5em;
+}
+
+.scale-stretched #venus .planet {
+  font-size: 3.72em;
+}
+
+.scale-stretched #earth .planet {
+  font-size: 3.92em;
+}
+
+.scale-stretched #earth .moon {
+  font-size: 1.2em;
+}
+
+.scale-stretched #mars .planet {
+  font-size: 2.9em;
+}
+
+.scale-stretched #jupiter .planet {
+  font-size: 12em;
+}
+
+.scale-stretched #saturn .planet {
+  font-size: 10.8em;
+}
+
+.scale-stretched #uranus .planet {
+  font-size: 4.68em;
+}
+
+.scale-stretched #neptune .planet {
+  font-size: 4.9em;
+}
+
+/* Distance Scale Boyutları */
+.scale-d #sun {
+}
+
+.scale-d #mercury .planet {
+  font-size: 0.14634em;
+}
+
+.scale-d #venus .planet {
+  font-size: 0.36306em;
+}
+
+.scale-d #earth .planet {
+  font-size: 0.38226em;
+}
+
+.scale-d #earth .moon {
+  font-size: 0.08226em;
+}
+
+.scale-d #mars .planet {
+  font-size: 0.20334em;
+}
+
+.scale-d #jupiter .planet {
+  font-size: 4.19466em;
+}
+
+.scale-d #saturn .planet {
+  font-size: 3.49392em;
+}
+
+.scale-d #uranus .planet {
+  font-size: 1.52172em;
+}
+
+.scale-d #neptune .planet {
+  font-size: 1.47732em;
+}
+
+/* Size Scale Boyutları */
+.scale-s #sun {
+}
+
+.scale-s #mercury .planet {
+  font-size: 1.4634em;
+}
+
+.scale-s #venus .planet {
+  font-size: 3.6306em;
+}
+
+.scale-s #earth .planet {
+  font-size: 3.8226em;
+}
+
+.scale-s #earth .moon {
+  font-size: 0.8226em;
+}
+
+.scale-s #mars .planet {
+  font-size: 2.0334em;
+}
+
+.scale-s #jupiter .planet {
+  font-size: 41.9466em;
+}
+
+.scale-s #saturn .planet {
+  font-size: 34.9392em;
+}
+
+.scale-s #uranus .planet {
+  font-size: 15.2172em;
+}
+
+.scale-s #neptune .planet {
+  font-size: 14.7732em;
+}
+
+/* --------------------------------------------------------------------------- */
+/*                                 Orbit Boyutları                           */
+/* --------------------------------------------------------------------------- */
+
+/* Stretched Orbits */
+.scale-stretched #mercury.orbit {
+  width: 32em;
+  height: 32em;
+  margin: -16em 0 0 -16em;
+}
+
+.scale-stretched #venus.orbit {
+  width: 40em;
+  height: 40em;
+  margin: -20em 0 0 -20em;
+}
+
+.scale-stretched #earth.orbit {
+  width: 56em;
+  height: 56em;
+  margin: -28em 0 0 -28em;
+}
+
+.scale-stretched #earth .orbit {
+  /* Ay Orbit */
+  width: 6em;
+  height: 6em;
+  margin: -3em 0 0 -3em;
+}
+
+.scale-stretched #mars.orbit {
+  width: 72em;
+  height: 72em;
+  margin: -36em 0 0 -36em;
+}
+
+.scale-stretched #jupiter.orbit {
+  width: 100em;
+  height: 100em;
+  margin: -50em 0 0 -50em;
+}
+
+.scale-stretched #saturn.orbit {
+  width: 150em;
+  height: 150em;
+  margin: -75em 0 0 -75em;
+}
+
+.scale-stretched #uranus.orbit {
+  width: 186em;
+  height: 186em;
+  margin: -93em 0 0 -93em;
+}
+
+.scale-stretched #neptune.orbit {
+  width: 210em;
+  height: 210em;
+  margin: -105em 0 0 -105em;
+}
+
+/* Distance Scale Orbits */
+.scale-d #mercury.orbit {
+  width: 44.74176em;
+  height: 44.74176em;
+  margin: -22.37088em 0 0 -22.37088em;
+}
+
+.scale-d #venus.orbit {
+  width: 47.35737em;
+  height: 47.35737em;
+  margin: -23.67869em 0 0 -23.67869em;
+}
+
+.scale-d #earth.orbit {
+  width: 49.50959em;
+  height: 49.50959em;
+  margin: -24.75479em 0 0 -24.75479em;
+}
+
+.scale-d #mars.orbit {
+  width: 53.58356em;
+  height: 53.58356em;
+  margin: -26.79178em 0 0 -26.79178em;
+}
+
+.scale-d #jupiter.orbit {
+  width: 82.20420em;
+  height: 82.20420em;
+  margin: -41.10210em 0 0 -41.10210em;
+}
+
+.scale-d #saturn.orbit {
+  width: 115.91713em;
+  height: 115.91713em;
+  margin: -57.95857em 0 0 -57.95857em;
+}
+
+.scale-d #uranus.orbit {
+  width: 191.00471em;
+  height: 191.00471em;
+  margin: -95.50235em 0 0 -95.50235em;
+}
+
+.scale-d #neptune.orbit {
+  width: 275.64709em;
+  height: 275.64709em;
+  margin: -137.82355em 0 0 -137.82355em;
+}
+
+.scale-d #earth .orbit {
+  /* Ay Orbit */
+  width: 1em;
+  height: 1em;
+  margin: -0.5em 0 0 -0.5em;
+}
+
+/* Size Scale Orbits */
+.scale-s #mercury.orbit {
+  width: 441.3048em;
+  height: 441.3048em;
+  margin: -220.6524em 0 0 -220.6524em;
+}
+
+.scale-s #venus.orbit {
+  width: 457.3048em;
+  height: 457.3048em;
+  margin: -228.6524em 0 0 -228.6524em;
+}
+
+.scale-s #earth.orbit {
+  width: 473.3048em;
+  height: 473.3048em;
+  margin: -236.6524em 0 0 -236.6524em;
+}
+
+.scale-s #mars.orbit {
+  width: 489.3048em;
+  height: 489.3048em;
+  margin: -244.6524em 0 0 -244.6524em;
+}
+
+.scale-s #jupiter.orbit {
+  width: 561.3048em;
+  height: 561.3048em;
+  margin: -280.6524em 0 0 -280.6524em;
+}
+
+.scale-s #saturn.orbit {
+  width: 705.3048em;
+  height: 705.3048em;
+  margin: -352.6524em 0 0 -352.6524em;
+}
+
+.scale-s #uranus.orbit {
+  width: 817.3048em;
+  height: 817.3048em;
+  margin: -408.6524em 0 0 -408.6524em;
+}
+
+.scale-s #neptune.orbit {
+  width: 881.3048em;
+  height: 881.3048em;
+  margin: -440.6524em 0 0 -440.6524em;
+}
+
+.scale-s #earth .orbit {
+  /* Ay Orbit */
+  width: 1em;
+  height: 1em;
+  margin: -0.5em 0 0 -0.5em;
+}
+
+/* --------------------------------------------------------------------------- */
+/*                             Metin Bilgileri                                */
+/* --------------------------------------------------------------------------- */
+
+/* Speed Bilgileri */
+.set-speed dl.infos dd span::after {
+  content: 'Orbit Velocity';
+}
+
+.set-speed #sun dl.infos dd::after {
+  content: '0 km/h';
+}
+
+.set-speed #mercury dl.infos dd::after {
+  content: '170,503 km/h';
+}
+
+.set-speed #venus dl.infos dd::after {
+  content: '126,074 km/h';
+}
+
+.set-speed #earth dl.infos dd::after {
+  content: '107,218 km/h';
+}
+
+.set-speed #mars dl.infos dd::after {
+  content: '86,677 km/h';
+}
+
+.set-speed #jupiter dl.infos dd::after {
+  content: '47,002 km/h';
+}
+
+.set-speed #saturn dl.infos dd::after {
+  content: '34,701 km/h';
+}
+
+.set-speed #uranus dl.infos dd::after {
+  content: '24,477 km/h';
+}
+
+.set-speed #neptune dl.infos dd::after {
+  content: '19,566 km/h';
+}
+
+/* Size Bilgileri */
+.set-size dl.infos dd span::after {
+  content: 'Equatorial Circumference';
+}
+
+.set-size #sun dl.infos dd::after {
+  content: '4,370,005 km';
+}
+
+.set-size #mercury dl.infos dd::after {
+  content: '15,329 km';
+}
+
+.set-size #venus dl.infos dd::after {
+  content: '38,024 km';
+}
+
+.set-size #earth dl.infos dd::after {
+  content: '40,030 km';
+}
+
+.set-size #mars dl.infos dd::after {
+  content: '21,296 km';
+}
+
+.set-size #jupiter dl.infos dd::after {
+  content: '439,263 km';
+}
+
+.set-size #saturn dl.infos dd::after {
+  content: '365,882 km';
+}
+
+.set-size #uranus dl.infos dd::after {
+  content: '159,354 km';
+}
+
+.set-size #neptune dl.infos dd::after {
+  content: '154,704 km';
+}
+
+/* Distance Bilgileri */
+.set-distance dl.infos dd span::after {
+  content: 'From Sun';
+}
+
+.set-distance #sun dl.infos dd span::after {
+  content: 'From Earth';
+}
+
+.set-distance #sun dl.infos dd::after {
+  content: '149,598,262 km';
+}
+
+.set-distance #mercury dl.infos dd::after {
+  content: '57,909,227 km';
+}
+
+.set-distance #venus dl.infos dd::after {
+  content: '108,209,475 km';
+}
+
+.set-distance #earth dl.infos dd::after {
+  content: '149,598,262 km';
+}
+
+.set-distance #mars dl.infos dd::after {
+  content: '227,943,824 km';
+}
+
+.set-distance #jupiter dl.infos dd::after {
+  content: '778,340,821 km';
+}
+
+.set-distance #saturn dl.infos dd::after {
+  content: '1,426,666,422 km';
+}
+
+.set-distance #uranus dl.infos dd::after {
+  content: '2,870,658,186 km';
+}
+
+.set-distance #neptune dl.infos dd::after {
+  content: '4,498,396,441 km';
+}
+
+

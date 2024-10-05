@@ -1,0 +1,25 @@
+/* src/assets/css/ModelViewers.css */
+
+/* Model Viewer'ın kapsayıcısı */
+.model-viewer-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Model Viewer bileşeni için stil ayarları */
+model-viewer {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+/* Ay için özel stil */
+.planet .moon model-viewer {
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+}
